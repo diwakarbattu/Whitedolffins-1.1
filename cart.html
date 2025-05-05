@@ -21,21 +21,21 @@
     <!-- Navbar Start -->
     <div class="container-fluid fixed-top px-0 bg-w">
       <nav class="navbar navbar-expand-lg navbar-dark navbar-nav">
-        <div class="container-fluid">
+        <div class="container-fluid mob-header">
+          <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbarExample-expand-lg"
+          aria-controls="offcanvasNavbarExample-expand-lg"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
           <a class="logo-text" href="index.html">
             <img src="images/Logo.png" style="vertical-align: middle" />
             <span class="text-black logo-text">White Dolffins</span>
           </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="offcanvas"
-            data-bs-target="#offcanvasNavbarExample-expand-lg"
-            aria-controls="offcanvasNavbarExample-expand-lg"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-
+      
           <div
             class="offcanvas offcanvas-start"
             tabindex="-1"
@@ -114,50 +114,92 @@
     <div class="py-5">
       <div class="container">
         <div class="row g-4">
-        
-            <div class="row cartH">
-              <div class="col-sm-8 col-md-2 text-black"></div>
-              <div class="col-sm-8 col-md-2 text-black">Product</div>
-              <div class="col-sm-8 col-md-2 ">Price</div>
-              <div class="col-sm-8 col-md-2 text-center">Quantity</div>
-              <div class="col-sm-8 col-md-3">Sub Total</div>
-              <div class="col-sm-8 col-md-2"></div>
-            </div>
-<div class="clear-fix"></div>
-          <div class="row car-div">
-            <div class="col-sm-2 col-md-2">
-              <a class="thumbnail">
-                <img class="media-object" src="images/cart1.jpg" />
-              </a>
-            </div>
-            <div class="col-sm-4 col-md-2">
-                <div class="media-body">
-                  <p>SEDS499COMPLEX</p> 
-                </div>
-            </div>
-            <div class="col-sm-8 col-md-2">
-                <div class="media-body">
-                <p>₹499.00 / month</p> 
-              </div>
-            </div>
-            <div class="col-sm-6 col-md-2">
-                <div class="media-body text-center">
+          <table class="table cartH text-black mob-font">
+            <thead>
+              <tr>
+                <th class="col-md-2"></th>
+                <th class="col-md-2 price">Product</th>
+                <th class="col-md-2 ">Price</th>
+                <th class="col-md-2 text-center">Quantity</th>
+                <th class="col-md-2">SubTotal</th>
+                <th class="col-md-2"></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="car-div">
+                <td class="col-sm-2 col-md-2 align-middle">
+                  <a class="thumbnail">
+                    <img class="media-object" src="images/cart1.jpg" />
+                  </a>
+                </td>
+                <td class="col-sm-4 col-md-2 align-middle price">
+                  <div class="media-body">
+                    <p>SEDS499COMPLEX</p> 
+                  </div>
+                </td>
+                <td class="col-md-2 align-middle">
+                  <div class="media-body">
+                    <p>₹499.00 / month</p> 
+                  </div>
+                </td>
+                <td class="col-sm-6 col-md-2 align-middle">
+                  <div class="media-body text-center">
                     <p>2</p>
-                </div>
-              </div>
-            
-            <div class="col-sm-6 col-md-3">
-                <div class="media-body">
-                    <p >₹499.00</p>
-              </div>
-            </div>  
-            <div class="col-sm-2 col-md-1">
-              <button type="button" class="btn btn-danger">
-                <span class="fa fa-trash"></span> 
-              </button>
-            </div>
-            </div>
-            <div class="row car-div">
+                  </div>
+                </td>
+                <td class="col-sm-6 col-md-3 align-middle">
+                  <div class="media-body">
+                    <p>₹499.00</p>
+                  </div>
+                </td>
+                <td class="col-sm-2 col-md-1 align-middle">
+                  <button type="button" class="btn btn-danger">
+                    <span class="fa fa-trash"></span> 
+                  </button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+<table class="mob-font">
+  <tbody>
+    <tr class="car-div">
+      <td class="col-sm-2 col-md-2 align-middle">
+        <a class="thumbnail">
+          <img class="media-object" src="images/cart2.jpg" />
+        </a>
+      </td>
+      <td class="col-sm-4 col-md-2 align-middle price">
+        <div class="media-body">
+          <p>SEDS299PREMIUM</p> 
+        </div>
+      </td>
+      <td class="col-md-2 align-middle">
+        <div class="media-body">
+          <p>₹699.00 / month</p> 
+        </div>
+      </td>
+      <td class="col-sm-6 col-md-2 align-middle">
+        <div class="media-body text-center">
+          <p>2</p>
+        </div>
+      </td>
+      <td class="col-sm-6 col-md-3 align-middle">
+        <div class="media-body">
+          <p>₹499.00</p>
+        </div>
+      </td>
+      <td class="col-sm-2 col-md-1 align-middle">
+        <button type="button" class="btn btn-danger">
+          <span class="fa fa-trash"></span> 
+        </button>
+      </td>
+    </tr>
+  </tbody>
+
+</table>
+<div class="clear-fix"></div>
+ 
+            <!-- <div class="row car-div">
               <div class="col-sm-2 col-md-2">
                 <a class="thumbnail">
                   <img class="media-object" src="images/cart2.jpg" />
@@ -189,7 +231,7 @@
                   <span class="fa fa-trash"></span> 
                 </button>
               </div>
-              </div>
+              </div> -->
        <div class="row">
         <div class="col-md-7">
           <form class="card p-2">
@@ -235,7 +277,7 @@
               <!-- Grid column -->
               <div class="col-12 col-md-4 mt-3">
                 <h4 class="text-uppercase mb-4 font-weight-bold text-black">
-                  Opening Hours
+                  Work Hours
                 </h4>
                 <div class="12u$(small)">
                   <ul class="days text-black">
@@ -272,8 +314,11 @@
               </div>
               <div class="col-12 col-md-4 mx-auto mt-3">
                 <h4 class="text-uppercase font-weight-bold text-black">
-                  Useful Links
+                  Social Media
                 </h4>
+                <h5 class="text-uppercase font-weight-bold text-black">
+                  Chat & Email
+                </h5>
                 <ul class="icons">
                   <li>
                     <a
@@ -387,7 +432,7 @@
               <!-- Grid column -->
               <div class="col-12 col-md-4 mx-auto mt-3">
                 <h4 class="text-uppercase mb-4 font-weight-bold text-black">
-                  Contact Us
+                  Reach Us
                 </h4>
                 <p class="mb-1em">
                   <b>WHITE DOLFFINS</b> <br />Ground Floor, 6-1-132/104/2, Shop
@@ -444,14 +489,16 @@
       </a>
       |
       <a href="https://bio.whitedolffins.com/" target="_blank">
-        Bio - Micro Site <b>Webite Policies</b>: DMCA / Removal</a
+        Bio - Micro Site</a
       >
-      |
+      <br />
+      <b>Webite Policies : </b>
       <a
         href="https://policies.whitedolffins.com/website-policies/dmca-removal"
         target="_blank"
-        >DMCA / Removal</a
       >
+        DMCA / Removal
+      </a>
       |<a
         href="https://policies.whitedolffins.com/website-policies/privacy-policy"
         target="_blank"
@@ -462,13 +509,20 @@
       <a
         href="https://policies.whitedolffins.com/website-policies/terms-of-service"
         target="_blank"
-        >Terms of Service Business Policies: Ads Policy</a
+        >Terms of Service
+      </a>
+      <br /><b>Business Policies : </b>
+      <a
+        href="https://policies.whitedolffins.com/business-policies/ads-policy"
+        target="_blank"
       >
-      |
+        Ads Policy
+      </a>
       <a
         href="https://policies.whitedolffins.com/business-policies/cancellation-refund-policy"
         target="_blank"
-        >Cancellation & Refund Policy</a
+      >
+        Cancellation & Refund Policy</a
       >
       |
       <a
@@ -508,10 +562,10 @@
         >Terms & Conditions Apply
       </a>
       |
-      <a href=""
+      <a href="#"
         >Images and other media are used for creative representation
       </a>
-      |<a href="">Offers available exclusively from WHITE DOLFFINS™</a>
+      |<a href="#">Offers available exclusively from WHITE DOLFFINS™</a>
     </div>
     <!-- Footer End -->
 
