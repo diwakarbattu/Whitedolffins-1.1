@@ -109,9 +109,7 @@
   margin-top: 0px;
   padding: 0px 25px;
 }
-.navbar-toggler {
-  background-color: #000;
-}
+
 .month {
   color: #000;
   padding: 10px;
@@ -215,7 +213,14 @@
 .nav-link:hover {
   color: #0096ff !important;
 }
-@media only screen and (min-width: 380px) and (max-width: 640px) {
+.cart-text p {
+  color: #000;
+  text-align: center;
+}
+.cart-img img {
+  width: 100px;
+}
+@media only screen and (min-width: 380px) and (max-width: 1024px) {
   .navbar-nav {
     padding: 0px;
   }
@@ -245,8 +250,29 @@
   .price {
     display: none;
   }
+  .cart-img img {
+    margin: 0px auto 10px;
+    width: 150px;
+    display: block;
+  }
+  .cart-text p {
+    text-align: left;
+    padding: 8px;
+    border-bottom: 1px solid #ccc;
+  }
+  .delete-btn {
+    border: none;
+  }
+
+  .delete-btn .btn {
+    margin-top: 10px;
+  }
+  .sub_btn {
+    margin: auto;
+    display: block;
+  }
 }
-@media (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
   .navbar-toggler {
     margin-top: 10px;
     background: none;
@@ -254,5 +280,29 @@
   .mob-text {
     text-align: left;
     padding-left: 20px;
+  }
+  .offcanvas {
+    z-index: 1055 !important; /* Bootstrap default, ensures it's above navbar etc. */
+  }
+  .offcanvas-body,
+  .offcanvas-body a {
+    pointer-events: auto !important;
+  }
+  .cart-img img {
+    margin: 0px auto 10px;
+    width: 150px;
+    display: block;
+  }
+  .cart-text p {
+    text-align: left;
+    padding: 8px;
+    border-bottom: 1px solid #ccc;
+  }
+  .delete-btn {
+    border: none;
+  }
+
+  .delete-btn .btn {
+    margin-top: 10px;
   }
 }
